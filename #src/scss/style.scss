@@ -11,6 +11,385 @@
 @import "fonts";
 @import "obnul";
 
-h1 {
-	font-size: 20px;
+.icon-box {
+	width: 40px;
+	height: 40px;
+	fill: #fff;
+	border: solid 1px #fff;
+	padding: 10px 10px;
+	border-radius: 50%;
+	margin: 0px 0px 0px 16px;
+
+	&:hover {
+		fill: rgb(212, 147, 241);
+	}
+}
+.icon-log {
+	width: 241px;
+	height: 54px;
+}
+.conteiner {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.header {
+	background-image: url(../img/bg1.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	height: 100vh;
+
+	&__body {
+		padding: 25px 0 0 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+	}
+
+	&__social {
+	}
+}
+.logo {
+}
+
+.menu a {
+	font-family: Gotham;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: left;
+	color: #ffffff;
+	text-transform: uppercase;
+	margin: 0px 50px;
+}
+.social {
+}
+.header {
+	&__slider {
+		padding: 245px 0 320px 0;
+	}
+}
+.slider {
+	&__title {
+		font-family: Gotham;
+		font-size: 80px;
+		font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		// line-height: 0.28;
+		letter-spacing: 4px;
+		text-align: center;
+		color: #ffffff;
+		padding: 0 0 28px 0;
+		text-transform: uppercase;
+	}
+
+	&__discr {
+		font-family: Gotham;
+		font-size: 18px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.22;
+		letter-spacing: 5.4px;
+		text-align: center;
+		color: #ffffff;
+		text-transform: uppercase;
+	}
+}
+.circle-down {
+	position: absolute;
+	bottom: 50px;
+	left: 48%;
+}
+
+.hr {
+	width: 100px;
+	height: 1px;
+	background-color: #2c4058;
+	margin: 0px 0px 40px 0px;
+	&__w {
+		width: 100px;
+		height: 1px;
+		background-color: #ffffff;
+	}
+}
+.title {
+	font-family: Gotham;
+	font-size: 44px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	letter-spacing: normal;
+	text-align: center;
+	text-transform: uppercase;
+}
+.project {
+	&__wrap {
+		padding: 100px 0 0 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__title {
+		color: #2c4058;
+	}
+
+	&__one {
+		display: flex;
+		padding: 160px 0 0 0;
+	}
+
+	&__two {
+		display: flex;
+		padding: 170px 0 140px 0;
+	}
+	&__left {
+		margin: 0px 40px 0px 0px;
+	}
+	&__rigth {
+		margin: 0px 0px 0px 70px;
+	}
+}
+.icon-lock {
+	width: 20px;
+	height: 20px;
+}
+.one {
+	&__body {
+		display: flex;
+		flex-direction: column;
+	}
+	&__img {
+		position: relative;
+	}
+	&__title {
+		font-family: Gotham;
+		font-size: 44px;
+		font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		letter-spacing: normal;
+		text-align: left;
+		color: #2c4058;
+		text-transform: uppercase;
+		padding: 40px 0 25px 0;
+	}
+	&__title span {
+		font-size: 22px;
+		font-weight: normal;
+	}
+
+	&__dicription {
+		font-family: OpenSans;
+		font-size: 18px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.67;
+		letter-spacing: normal;
+		text-align: left;
+		color: #4b5562;
+		max-width: 460px;
+		margin: 0px 0px 25px 0px;
+	}
+
+	&__button a {
+		border: solid 1px black;
+		padding: 16px 38px;
+		font-family: Gotham;
+		font-size: 14px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 4.57;
+		letter-spacing: normal;
+		text-align: center;
+		color: #2c4058;
+		text-transform: uppercase;
+
+		&:hover {
+			text-decoration: underline black;
+			text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+			box-shadow: 8px 7px 14px rgba(50, 57, 50, 0.44);
+		}
+	}
+
+	&__place {
+		font-family: OpenSans;
+		font-size: 18px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: italic;
+		line-height: 1.67;
+		letter-spacing: normal;
+		text-align: left;
+		color: #2c4058;
+		margin: 45px 0px 0px 0px;
+	}
+}
+.img__back {
+	position: absolute;
+	top: -70px;
+	width: 585px;
+	height: 470px;
+	z-index: -1;
+}
+.left {
+	left: -215px;
+	background-color: #55b7ff;
+}
+.right {
+	right: -215px;
+	background-color: #7e5aff;
+}
+
+.news {
+	background-image: url(../img/bg2.jpg);
+	background-position: center;
+	background-size: cover;
+	padding: 140px 0 0 0;
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__title {
+		color: #ffffff;
+		padding: 40px 0 100px 0;
+	}
+
+	&__sliders {
+		padding: 0 0 210px 0;
+		display: flex;
+		gap: 30px;
+	}
+	&__card {
+		background-color: #fff;
+		max-width: 370px;
+	}
+}
+.card {
+	&__img {
+	}
+
+	&__title {
+		font-family: Gotham;
+		font-size: 22px;
+		font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.55;
+		letter-spacing: normal;
+		text-align: left;
+		color: #2c4058;
+		text-transform: uppercase;
+	}
+
+	&__discription {
+		font-family: OpenSans;
+		font-size: 18px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.67;
+		letter-spacing: normal;
+		text-align: left;
+		color: #4b5562;
+	}
+
+	&__avtor {
+		display: flex;
+		align-items: center;
+	}
+	&__text {
+		padding: 30px 20px;
+		display: flex;
+		flex-direction: column;
+	}
+}
+.avtor {
+	&__img img {
+		border-radius: 50%;
+	}
+
+	&__name {
+		display: flex;
+		flex-direction: column;
+	}
+}
+.name {
+	&__title {
+		font-family: Gotham;
+		font-size: 18px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.22;
+		letter-spacing: normal;
+		text-align: left;
+		color: #2c4058;
+		text-transform: uppercase;
+	}
+
+	&__date {
+		font-family: Gotham;
+		font-size: 14px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.57;
+		letter-spacing: normal;
+		text-align: left;
+		color: #55b7ff;
+	}
+}
+
+.gallary {
+	padding: 140px 0 0 0;
+	&__wrap {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	&__title {
+		color: #2c4058;
+	}
+
+	&__cuntry {
+	}
+
+	&__album {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		gap: 10px;
+		padding: 100px 0 60px 0;
+	}
+}
+.album {
+	&__small {
+		overflow: hidden;
+		object-fit: cover;
+		object-position: center;
+		width: 285px;
+		height: 214px;
+	}
+	&__small a {
+		width: 100%;
+		height: 100%;
+	}
+
+	&__big {
+		grid-column: 2 span;
+		grid-row: 2 span;
+	}
 }
