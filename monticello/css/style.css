@@ -186,6 +186,11 @@ h6 {
   margin: 0 auto;
 }
 
+.conteiner2 {
+  max-width: 770px;
+  margin: 0 auto;
+}
+
 .header {
   background-image: url(../img/bg1.jpg);
   background-position: center;
@@ -195,7 +200,14 @@ h6 {
 }
 
 .header__body {
-  padding: 25px 0 0 0;
+  position: fixed;
+  z-index: 10;
+  padding: 25px 0;
+  background-color: #55b7ff;
+  width: 100%;
+}
+
+.header__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,6 +274,8 @@ h6 {
   height: 1px;
   background-color: #2c4058;
   margin: 0px 0px 40px 0px;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .hr__w {
@@ -281,8 +295,8 @@ h6 {
   text-transform: uppercase;
 }
 
-.project__wrap {
-  padding: 100px 0 0 0;
+.project {
+  padding: 100px 0 140px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,27 +304,24 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+.project__wrap {
+  padding: 70px 0 0 0;
+  margin: 100px 0 0 0;
+  position: relative;
 }
 
 .project__title {
   color: #2c4058;
 }
 
-.project__one {
+.project__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 160px 0 0 0;
-}
-
-.project__two {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 170px 0 140px 0;
+  position: relative;
+  width: 100%;
 }
 
 .project__left {
@@ -334,10 +345,6 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.one__img {
-  position: relative;
 }
 
 .one__title {
@@ -410,19 +417,20 @@ h6 {
 
 .img__back {
   position: absolute;
-  top: -70px;
-  width: 585px;
+  top: 0;
+  width: 53%;
+  max-width: 630px;
   height: 470px;
   z-index: -1;
 }
 
 .left {
-  left: -215px;
+  left: 0;
   background-color: #55b7ff;
 }
 
 .right {
-  right: -215px;
+  right: 0;
   background-color: #7e5aff;
 }
 
@@ -431,6 +439,7 @@ h6 {
   background-position: center;
   background-size: cover;
   padding: 140px 0 0 0;
+  position: relative;
 }
 
 .news__wrap {
@@ -462,6 +471,20 @@ h6 {
 .news__card {
   background-color: #fff;
   max-width: 370px;
+  min-height: 514px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.owl-prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
 }
 
 .card__title {
@@ -475,6 +498,8 @@ h6 {
   text-align: left;
   color: #2c4058;
   text-transform: uppercase;
+  padding: 20px 20px 0 20px;
+  min-height: 6em;
 }
 
 .card__discription {
@@ -487,6 +512,8 @@ h6 {
   letter-spacing: normal;
   text-align: left;
   color: #4b5562;
+  padding: 0 20px;
+  margin-top: auto;
 }
 
 .card__avtor {
@@ -496,17 +523,8 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.card__text {
-  padding: 30px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  padding: 0 20px 20px 20px;
+  margin-top: auto;
 }
 
 .avtor__img img {
@@ -521,6 +539,7 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0 20px;
 }
 
 .name__title {
@@ -597,6 +616,38 @@ h6 {
   grid-row: 2 span;
 }
 
+.map {
+  height: 70vh;
+}
+
+.footer {
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+}
+
+.footer__copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Gotham;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.footer__copy p {
+  margin: 40px 0px 0px 0px;
+}
+
 .webp .header{ background-image: url(../img/bg1.webp); }
 
 .webp .news{ background-image: url(../img/bg2.webp); }
+
+.webp .footer{ background-image: url(../img/bg.webp); }
