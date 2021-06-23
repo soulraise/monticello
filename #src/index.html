@@ -15,21 +15,30 @@
 </head>
 
 <body>
-	<div class="header__body">
+	<div class="header__body" id="header">
 		<div class="conteiner">
 			<div class="header__wrap">
 				<div class="header__logo logo">
 					<svg class="icon-log">
 						<use xlink:href="img/icons/icons.svg#logo"></use>
 					</svg>
-
 				</div>
-				<div class="menu">
-					<a href="">About Us</a>
-					<a href="">projects</a>
-					<a href="">news</a>
-					<a href="">contact</a>
-				</div>
+				<nav class="menu">
+					<ul class="menu__list">
+						<li><a href="#about" class="menu__item">
+								<div class="menu__circle menu__circle_active"></div> About Us
+							</a></li>
+						<li><a href="#project" class="menu__item">
+								<div class="menu__circle"></div>projects
+							</a></li>
+						<li><a href="#news" class="menu__item">
+								<div class="menu__circle"></div>news
+							</a></li>
+						<li><a href="#footer" class="menu__item">
+								<div class="menu__circle"></div>contact
+							</a></li>
+					</ul>
+				</nav>
 				<div class="header__social social">
 					<a href="#"><svg class="icon-box">
 							<use xlink:href="img/icons/icons.svg#facebook"></use>
@@ -46,7 +55,7 @@
 		</div>
 
 	</div>
-	<div class="header">
+	<div class="header section" id="about">
 		<div class="conteiner">
 
 			<div class="header__slider">
@@ -66,12 +75,12 @@
 
 				</div>
 			</div>
-			<a href="#" class="circle-down"><svg class="icon-box">
+			<a href="#project" class="circle-down" id="circle-down"><svg class="icon-box">
 					<use xlink:href="img/icons/icons.svg#keyboard_arrow_down"></use>
 				</svg></a>
 		</div>
 	</div>
-	<section class="project">
+	<section class="project section" id="project">
 
 
 		<div class="hr"></div>
@@ -127,7 +136,7 @@
 
 
 	</section>
-	<section class="news">
+	<section class="news section" id="news">
 		<div class="conteiner">
 			<div class="news__wrap">
 				<div class="hr__w"></div>
@@ -255,34 +264,40 @@
 		</div>
 	</section>
 	<div id="map" class="map"></div>
-	<section class="footer">
+	<section class="footer section" id="footer">
+
 		<div class="conteiner2">
-			<div class="header__wrap">
-				<div class="header__logo logo">
-					<svg class="icon-log">
-						<use xlink:href="img/icons/icons.svg#logo"></use>
-					</svg>
-
+			<div class="footer__wrap">
+				<div class="footer__btn">
+					<a href="#">contact us</a>
 				</div>
-
-				<div class="header__social social">
-					<a href="#"><svg class="icon-box">
-							<use xlink:href="img/icons/icons.svg#facebook"></use>
-						</svg></a>
-					<a href="#"><svg class="icon-box">
-							<use xlink:href="img/icons/icons.svg#twitter"></use>
-						</svg></a>
-					<a href="#"><svg class="icon-box">
-							<use xlink:href="img/icons/icons.svg#instagram"></use>
-						</svg></a>
+				<div class="header__wrap">
+					<div class="header__logo logo">
+						<svg class="icon-log">
+							<use xlink:href="img/icons/icons.svg#logo"></use>
+						</svg>
+					</div>
+					<div class="header__social social">
+						<a href="#"><svg class="icon-box">
+								<use xlink:href="img/icons/icons.svg#facebook"></use>
+							</svg></a>
+						<a href="#"><svg class="icon-box">
+								<use xlink:href="img/icons/icons.svg#twitter"></use>
+							</svg></a>
+						<a href="#"><svg class="icon-box">
+								<use xlink:href="img/icons/icons.svg#instagram"></use>
+							</svg></a>
+					</div>
+				</div>
+				<div class="footer__copy">
+					<p>Copyrights © 2017 Monticello Group</p>
+					<p>Made with  by Ga Huy</p>
 				</div>
 			</div>
-			<div class="footer__copy">
-				<p>Copyrights © 2017 Monticello Group</p>
-				<p>Made with  by Ga Huy</p>
-			</div>
+
 		</div>
 	</section>
+
 
 
 	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>

@@ -45,7 +45,7 @@
 
 	&__body {
 		position: fixed;
-		z-index: 10;
+		z-index: 1000;
 		padding: 25px 0;
 		background-color: #55b7ff;
 		width: 100%;
@@ -54,6 +54,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		padding: 0 10px;
 	}
 
 	&__logo {
@@ -64,20 +65,42 @@
 }
 .logo {
 }
+.menu {
+	max-width: 720px;
+	width: 100%;
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__circle {
+		width: 9px;
+		height: 9px;
+		border-radius: 50%;
+		border: 1px solid #fff;
+		margin: 0px 14px 0px 0px;
+		&_active {
+			background-color: #fff;
+		}
+	}
 
-.menu a {
-	font-family: Gotham;
-	font-size: 14px;
-	font-weight: normal;
-	font-stretch: normal;
-	font-style: normal;
-	line-height: 1.57;
-	letter-spacing: normal;
-	text-align: left;
-	color: #ffffff;
-	text-transform: uppercase;
-	margin: 0px 50px;
+	&__item {
+		display: flex;
+		align-items: center;
+		white-space: nowrap;
+		font-family: Gotham;
+		font-size: 14px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.57;
+		letter-spacing: normal;
+		text-align: left;
+		color: #ffffff;
+		text-transform: uppercase;
+		margin: 0px 10px;
+	}
 }
+
 .social {
 }
 .header {
@@ -376,7 +399,7 @@
 }
 
 .gallary {
-	padding: 140px 0 0 0;
+	padding: 140px 0 60px 0;
 	&__wrap {
 		display: flex;
 		align-items: center;
@@ -388,6 +411,21 @@
 	}
 
 	&__cuntry {
+		display: flex;
+		width: 100%;
+		justify-content: space-around;
+		margin: 70px 0px 30px 0;
+	}
+	&__cuntry a {
+		font-family: Gotham;
+		font-size: 30px;
+		font-weight: 500;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 0.5;
+		letter-spacing: normal;
+		text-align: center;
+		color: #2c4058;
 	}
 
 	&__album {
@@ -395,7 +433,6 @@
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
 		gap: 10px;
-		padding: 100px 0 60px 0;
 	}
 }
 .album {
@@ -423,7 +460,31 @@
 	background-image: url(../img/bg.jpg);
 	background-size: cover;
 	background-position: center;
-	padding: 200px 0;
+	padding: 170px 0;
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+	}
+	&__btn {
+		align-self: center;
+		margin: 0px 0px 30px 0px;
+	}
+	&__btn a {
+		display: flex;
+		font-family: Gotham;
+		font-size: 18px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.57;
+		letter-spacing: normal;
+		text-align: left;
+		color: #ffffff;
+		text-transform: uppercase;
+		border: solid 1px;
+		padding: 10px 20px;
+		border-radius: 20px;
+	}
 	&__copy {
 		display: flex;
 		font-family: Gotham;
