@@ -201,10 +201,16 @@ h6 {
 
 .header__body {
   position: fixed;
-  z-index: 1000;
+  z-index: 10000;
   padding: 25px 0;
   background-color: #55b7ff;
   width: 100%;
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .header__wrap {
@@ -218,6 +224,12 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 10px;
+}
+
+.hiden {
+  -webkit-transform: translatey(-100%);
+      -ms-transform: translatey(-100%);
+          transform: translatey(-100%);
 }
 
 .menu {
@@ -267,8 +279,20 @@ h6 {
   margin: 0px 10px;
 }
 
-.header__slider {
-  padding: 245px 0 320px 0;
+.slider {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
 }
 
 .slider__title {
@@ -734,6 +758,50 @@ h6 {
 
 .footer__copy p {
   margin: 40px 0px 0px 0px;
+}
+
+.icon-foo {
+  width: 12px;
+  height: 12px;
+  fill: #7e5aff;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left: -385px;
+  width: 770px;
+  background: #fff;
+  padding: 60px;
+  z-index: 1000;
+}
+
+.modal__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact__item a {
+  margin: 10px 0px 10px 0px;
+  font-family: Gotham;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.89;
+  letter-spacing: normal;
+  text-align: left;
+  color: #2c4058;
 }
 
 .webp .header{ background-image: url(../img/bg1.webp); }

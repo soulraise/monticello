@@ -85,3 +85,16 @@ function circleDown() {
 	})
 }
 circleDown()
+function clear() {
+	let res = []
+	window.addEventListener('scroll', function (e) {
+		let pos = document.getElementById('about').getBoundingClientRect();
+		res.push(pos.y)
+		if (res[res.length - 1] > res[res.length - 2]) {
+			document.querySelector('.header__body').classList.remove('hiden')
+		} else {
+			document.querySelector('.header__body').classList.add('hiden')
+		}
+	})
+}
+clear()

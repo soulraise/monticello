@@ -45,10 +45,12 @@
 
 	&__body {
 		position: fixed;
-		z-index: 1000;
+		z-index: 10000;
 		padding: 25px 0;
 		background-color: #55b7ff;
 		width: 100%;
+		transform: translateY(0%);
+		transition: all 0.5s ease;
 	}
 	&__wrap {
 		display: flex;
@@ -62,6 +64,11 @@
 
 	&__social {
 	}
+	&__slider {
+	}
+}
+.hiden {
+	transform: translatey(-100%);
 }
 .logo {
 }
@@ -103,12 +110,14 @@
 
 .social {
 }
-.header {
-	&__slider {
-		padding: 245px 0 320px 0;
-	}
-}
+
 .slider {
+	display: flex !important;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	height: 100%;
 	&__title {
 		font-family: Gotham;
 		font-size: 80px;
@@ -499,5 +508,65 @@
 	}
 	&__copy p {
 		margin: 40px 0px 0px 0px;
+	}
+}
+
+.icon-foo {
+	width: 12px;
+	height: 12px;
+	fill: #7e5aff;
+}
+.modal {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	margin-left: -385px;
+	width: 770px;
+	background: #fff;
+	padding: 60px;
+	z-index: 1000;
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&__item {
+	}
+
+	&__contact {
+	}
+
+	&__form {
+	}
+}
+
+.contact {
+	&__point {
+	}
+
+	&__mail {
+	}
+
+	&__clock {
+	}
+	&__item a {
+		margin: 10px 0px 10px 0px;
+		font-family: Gotham;
+		font-size: 18px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.89;
+		letter-spacing: normal;
+		text-align: left;
+		color: #2c4058;
+	}
+	&__phone {
+	}
+}
+.point {
+	&__text {
 	}
 }
